@@ -32,7 +32,7 @@
                 android:id="@+id/muell_text_view"
                 style="@style/BannerTextStyle"
                 android:onClick="submitMuellsack"
-                android:text="Müllsack" />
+                android:text="Müllsäcke" />
 
             <TextView
                 android:id="@+id/putzen_text_view"

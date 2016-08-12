@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="BannerTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:linksClickable">true </item>
+        <item name="android:textColor">#009688</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
 </resources>

@@ -9,8 +9,65 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.hausarbeitsplaner.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hi Timo!" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:alignParentLeft="true"
+            android:background="#B2EBF2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Funktionen:" />
+
+            <TextView
+                android:id="@+id/muell_text_view"
+                style="@style/BannerTextStyle"
+                android:onClick="submitMuellsack"
+                android:text="Müllsack" />
+
+            <TextView
+                android:id="@+id/putzen_text_view"
+                style="@style/BannerTextStyle"
+                android:onClick="submitPutzen"
+                android:text="Putzen" />
+
+            <TextView
+                android:id="@+id/dailybudget_text_view"
+                style="@style/BannerTextStyle"
+                android:onClick="submitDailyBudget"
+                android:text="Daily Budget" />
+
+            <TextView
+                android:id="@+id/einkaufen_text_view"
+                style="@style/BannerTextStyle"
+                android:onClick="submitEinkaufen"
+                android:text="Einkaufen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alignParentRight="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>
